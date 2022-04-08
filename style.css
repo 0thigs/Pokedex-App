@@ -16,6 +16,7 @@ body {
 }
 
 main {
+    cursor: default;
     width: 25rem;
     height: 40rem;
     background-color: red;
@@ -159,7 +160,17 @@ button {
     justify-content: center;
     align-items: center;
     background-color: rgb(26, 26, 26);
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: rgb(42, 42, 42);
+}
+
+button:active {
+    background-color: rgb(17, 16, 16);;
+}
+
 
 svg {
     color: rgb(61, 61, 61);
