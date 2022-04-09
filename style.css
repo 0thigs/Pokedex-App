@@ -50,7 +50,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     letter-spacing: 2px;
     font-size: 20px;
     font-family: 'Pokemon Solid', sans-serif;
@@ -72,8 +72,8 @@ main {
 }
 
 .poke-img-c img {
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
 }
 
 .poke-name-controls-c {
@@ -125,7 +125,8 @@ main {
 
 .poke-info-name-c {
     width: 27.3rem;
-    height: 3.15rem;
+    height: 3rem;
+    margin-top: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,35 +145,14 @@ span {
     margin: 20px;
     width: 20rem;
     height: 20rem;
-    background-color: white;
+    background-color: rgb(176, 243, 223);;
     border: solid 1px black ;
     -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
     -moz-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
     box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
 }
 
-button {
-    width: 95px;
-    height: 55px;
-    border: solid 3px black;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(26, 26, 26);
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(42, 42, 42);
-}
-
-button:active {
-    background-color: rgb(17, 16, 16);;
-}
-
-
 svg {
     color: rgb(61, 61, 61);
-    height: 55px;
+    height: 30px;
 }
