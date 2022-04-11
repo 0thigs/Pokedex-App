@@ -51,7 +51,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+    color: yellow;
     letter-spacing: 2px;
     font-size: 20px;
     font-family: 'Pokemon Solid', sans-serif;
@@ -60,7 +61,6 @@ main {
 
 .poke-img-c {
     margin-top: 10px;
-    border: solid 1px black;
     width: 20.3rem;
     height: 13rem;
     -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
@@ -133,7 +133,8 @@ main {
     align-items: center;
     border-radius: 0 10px 0 0;
     letter-spacing: 3px;
-    color: white;
+    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+    color: yellow;
     font-size: 40px;
     font-family: 'Pokemon Solid', sans-serif;   
 }
@@ -147,7 +148,6 @@ main {
     width: 20rem;
     height: 20rem;
     background-color: rgb(176, 243, 223);
-    border: solid 1px black ;
     -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
     -moz-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
     box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
@@ -162,10 +162,11 @@ svg {
 }
 
 .info {
-    width: 16.8rem;
+    width: 18rem;
     height: 14rem;
 }
 
 .txt-info {
+    font-size: 13px;
     font-family: 'Press Start 2P', cursive;
 }
