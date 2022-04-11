@@ -1,8 +1,9 @@
-
-let n = 0
+let n = null
+let x = 1
 
 function Plus() {
     n++
+    x = 1
     fetch("https://pokeapi.co/api/v2/pokemon/"+n)
     .then(data => {
         data = data.json()
@@ -54,19 +55,21 @@ function Plus() {
     .then(data => { //CHANGE THE ABILITIES TO DESIGN
         let abilities = [...data.abilities]
         let chngAbilities = document.getElementById("abilities")
-        switch (abilities.length) {
-            case 1:
-                chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name}`
-            case 2:
-                chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name} and ${abilities[1].ability.name}`
-            case 3: 
-                chngAbilities.innerHTML = `Abilities: <span style="font-size: 10px;"><b>${abilities[0].ability.name}, ${abilities[1].ability.name} and ${abilities[2].ability.name}</b></span>`
+        if (abilities.length == 1) {
+            chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name}`
+        }
+        else if (abilities.length == 2) {
+            chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name} and ${abilities[1].ability.name}`
+        }
+        else if (abilities.length == 3) {
+            chngAbilities.innerHTML = `Abilities: <span style="font-size: 10px;"><b>${abilities[0].ability.name}, ${abilities[1].ability.name} and ${abilities[2].ability.name}</b></span>`
         }
     })
 }
 
 function Minus() {
     n--
+    x = 1
     if (n < 0) {n = n+1}
     fetch("https://pokeapi.co/api/v2/pokemon/"+n)
     .then(data => {
@@ -119,13 +122,47 @@ function Minus() {
     .then(data => { //CHANGE THE ABILITIES TO DESIGN
         let abilities = [...data.abilities]
         let chngAbilities = document.getElementById("abilities")
-        switch (abilities.length) {
-            case 1:
-                chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name}`
-            case 2:
-                chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name} and ${abilities[1].ability.name}`
-            case 3: 
-                chngAbilities.innerHTML = `Abilities: <span style="font-size: 10px;"><b>${abilities[0].ability.name}, ${abilities[1].ability.name} and ${abilities[2].ability.name}</b></span>`
+        if (abilities.length == 1) {
+            chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name}`
         }
+        else if (abilities.length == 2) {
+            chngAbilities.innerHTML = `Abilities: ${abilities[0].ability.name} and ${abilities[1].ability.name}`
+        }
+        else if (abilities.length == 3) {
+            chngAbilities.innerHTML = `Abilities: <span style="font-size: 10px;"><b>${abilities[0].ability.name}, ${abilities[1].ability.name} and ${abilities[2].ability.name}</b></span>`
+        }
+    })
+}
+
+function ImgChanger() {
+    x++
+    if(x>4) {x = x-4}
+    fetch("https://pokeapi.co/api/v2/pokemon/"+n)
+    .then(data => { 
+        data = data.json()
+        return data
+    })
+    .then(data => {
+        fetch("https://pokeapi.co/api/v2/pokemon/"+data.species.name)
+        .then(data => {
+            data = data.json()
+            return data
+        })
+        .then(data => {
+            let img = document.getElementById("img")
+            let sprt = data.sprites
+            if(x === 1) {
+                img.src = sprt.front_default
+            }
+            else if (x === 2) {
+                img.src = sprt.back_default
+            }
+            else if (x === 3) {
+                img.src = sprt.front_shiny
+            }
+            else if (x === 4) {
+                img.src = sprt.back_shiny
+            }
+        })
     })
 }
