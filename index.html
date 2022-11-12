@@ -20,16 +20,24 @@
             </div>
         </div>
         <div class="poke-name-controls-c">
-            <div class="pokedex-name-c">
-                <p>Thigs <span id="yellow">Pokédex</span></p>
+            <div class="search">
+                <input type="text" id="input">
+                <button type="button" class="nes-btn" id="button" onclick="Search()">
+                    <img id="search-img" src="https://img.icons8.com/android/512/search.png" alt="img">
+                </button>
             </div>
-            <div class="pokedex-controls-c">
-                <button class="nes-btn" onclick="Minus()" id="previus"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                  </svg></button>
-                <button class="nes-btn" onclick="Plus()" id="next"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                  </svg></button>
+            <div class="separator">
+                <div class="pokedex-name-c">
+                    <p>Thigs <span id="yellow">Pokédex</span></p>
+                </div>
+                <div class="pokedex-controls-c">
+                    <button class="nes-btn" onclick="Minus()" id="previus"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                      </svg></button>
+                    <button class="nes-btn" onclick="Plus()" id="next"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                      </svg></button>
+                </div>
             </div>
         </div>
     </main> 

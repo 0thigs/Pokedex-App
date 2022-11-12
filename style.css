@@ -1,172 +1,207 @@
-@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("http://fonts.cdnfonts.com/css/pokemon-solid");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-* { 
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body { 
-    height: 100vh;
-    background-image: url("https://wallpapercave.com/wp/wp2711114.gif");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp2711114.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    cursor: default;
-    width: 25rem;
-    height: 40rem;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    border: solid 5px black;
-    -webkit-box-shadow: -3px 13px 20px 13px rgba(0,0,0,0.66);
-    -moz-box-shadow: -3px 13px 20px 13px rgba(0,0,0,0.66);
-    box-shadow: -3px 13px 20px 13px rgba(0,0,0,0.66);
+  cursor: default;
+  width: 25rem;
+  height: 40rem;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: solid 5px black;
+  -webkit-box-shadow: -3px 13px 20px 13px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: -3px 13px 20px 13px rgba(0, 0, 0, 0.66);
+  box-shadow: -3px 13px 20px 13px rgba(0, 0, 0, 0.66);
 }
 
-.main-container-second {    
-    width: 27.5rem;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-container-second {
+  width: 27.5rem;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .poke-name-image-c {
-    width: 20.3rem;
-    height: 19rem;
-    margin: 30px;
+  width: 20.3rem;
+  height: 19rem;
+  margin: 30px;
 }
 
 .poke-name-c {
-    width: 20.3rem;
-    height: 4.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
-    color: yellow;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-family: 'Pokemon Solid', sans-serif;
-                                                
+  width: 20.3rem;
+  height: 4.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+  color: yellow;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: "Pokemon Solid", sans-serif;
 }
 
 .poke-img-c {
-    margin-top: 10px;
-    width: 20.3rem;
-    height: 13rem;
-    -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    -moz-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    background-color: rgb(176, 243, 223);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 10px;
+  width: 20.3rem;
+  height: 13rem;
+  -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  background-color: rgb(176, 243, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .poke-img-c img {
-    width: 12rem;
-    height: 12rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .poke-name-controls-c {
-    width: 23.5rem;
-    height: 15rem;
-    display:flex;
-    flex-direction: row;
-    border: solid 4px black;
-    border-radius: 10px;
-    -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    -moz-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
+  width: 23.5rem;
+  height: 15rem;
+  border: solid 4px black;
+  border-radius: 10px;
+  -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+#input {
+  width: 15rem;
+  height: 3rem;
+  background: none;
+  border: none;
+  padding: 0px 10px;
+  outline: none;
+  border-bottom: solid 3px rgb(57, 56, 56);
+  border-radius: 0 10px;
+  font-size: 15px;
+  color: rgb(35, 35, 35);
+}
+
+#button {
+  width: 3rem;
+  height: 3rem;
+  border-radius:  0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-img {
+    transform: scale(0.7);
+    width: 2rem;
+    height: 2rem;
+}
+
+.separator {
+  display: flex;
 }
 
 .pokedex-name-c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 11rem;
-    height: 15rem;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Pokemon Solid', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Pokemon Solid", sans-serif;
 }
 
 .pokedex-controls-c {
-    width: 13rem;
-    height: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pokedex-second-part {
-    background-color: red;
-    border-radius: 0 10px 10px 0;
-    border-top: solid 5px black;
-    border-right: solid 5px black;
-    border-bottom: solid 5px black;
-    -webkit-box-shadow: inset 23px 0px 12px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 23px 0px 12px -4px rgba(0,0,0,0.75);
-    box-shadow: inset 23px 0px 12px -4px rgba(0,0,0,0.75);
-    width: 27.5rem;
-    height: 25.15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: red;
+  border-radius: 0 10px 10px 0;
+  border-top: solid 5px black;
+  border-right: solid 5px black;
+  border-bottom: solid 5px black;
+  -webkit-box-shadow: inset 23px 0px 12px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 23px 0px 12px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 23px 0px 12px -4px rgba(0, 0, 0, 0.75);
+  width: 27.5rem;
+  height: 25.15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .poke-info-name-c {
-    width: 27.3rem;
-    height: 3rem;
-    margin-top: 1.875rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 10px 0 0;
-    letter-spacing: 3px;
-    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
-    color: yellow;
-    font-size: 40px;
-    font-family: 'Pokemon Solid', sans-serif;   
+  width: 27.3rem;
+  height: 3rem;
+  margin-top: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 0 0;
+  letter-spacing: 3px;
+  text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+  color: yellow;
+  font-size: 40px;
+  font-family: "Pokemon Solid", sans-serif;
 }
 
 #yellow {
-    color: rgb(226, 226, 1);
+  color: rgb(226, 226, 1);
 }
 
 .poke-info-c {
-    margin: 20px;
-    width: 20rem;
-    height: 20rem;
-    background-color: rgb(176, 243, 223);
-    -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    -moz-box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    box-shadow: inset -1px 1px 12px 13px rgba(0,0,0,0.81);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 20px;
+  width: 20rem;
+  height: 20rem;
+  background-color: rgb(176, 243, 223);
+  -webkit-box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  box-shadow: inset -1px 1px 12px 13px rgba(0, 0, 0, 0.81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 svg {
-    color: rgb(61, 61, 61);
-    height: 30px;
+  color: rgb(61, 61, 61);
+  height: 30px;
 }
 
 .info {
-    width: 18rem;
-    height: 14rem;
+  width: 18rem;
+  height: 14rem;
 }
 
 .txt-info {
-    font-size: 13px;
-    font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
+  font-family: "Press Start 2P", cursive;
 }
